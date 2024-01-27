@@ -17,7 +17,7 @@ def get_movies(id=-1):
 
     Returns:
     Tuple:
-    - If id == 0:
+    - If id == -1:
         - list: A list of lists representing a random selection of movies
         - str: An empty string (no specific movie name)
     - Else:
