@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie recommender</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1><a href="/">movie recommendations</a></h1>
+    <h2>{{ h2 }}</h2>
+    <div class="grid-container">
+    {% for movie in movies %}
+        <div class="grid-item"><a href="/movie/{{ movie[0] }}"><img src="{{ movie[2] }}" width="100%"></a><br><br><a href="https://en.wikipedia.org/wiki/{{ movie[1] | urlencode }}">{{ movie[1] }}</a></div>
+    {% endfor %}
+    </div>
+</body>
+</html>
