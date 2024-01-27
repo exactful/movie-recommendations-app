@@ -3,6 +3,8 @@
 
 This project provides a simple movie recommendation web app using Python and Flask.
 
+![Example movie recommendations](example-recommendations.png)
+
 ## Overview
 
 The recommendation system is built using natural language processing techniques to analyse movie plots and recommend similar movies based on cosine similarity. The project consists of two main files:
@@ -20,7 +22,6 @@ python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 ```
-
 ## Usage
 
 **1. Generate web app data, first time only**
