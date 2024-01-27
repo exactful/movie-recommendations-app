@@ -21,8 +21,8 @@ for dirname, _, filenames in os.walk(config.SOURCE_DATA_PATH):
 print("Loaded source data in df")
 
 # Truncate the plots to first 100 words; adjust to improve consine similarity effectiveness
-df["plot"] = df["plot"].apply(lambda x: " ".join(x.split()[:100]))
-print("Truncated plots")
+#df["plot"] = df["plot"].apply(lambda x: " ".join(x.split()[:100]))
+#print("Truncated plots")
 
 # Create a TF-IDF vectorizer
 tfidf = TfidfVectorizer(stop_words="english")
