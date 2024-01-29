@@ -7,7 +7,7 @@ import pandas as pd
 
 import config
 
-def get_movies(id=-1):
+def get_movies(id=-1) -> (str, list):
 
     """
     Get a list of movies
